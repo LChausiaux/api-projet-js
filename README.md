@@ -41,12 +41,6 @@ php artisan key:generate
 
 ### 5. Configurer la base de données
 
-Le projet utilise SQLite par défaut. Créer le fichier de base de données :
-
-```bash
-type nul > database\database.sqlite
-```
-
 Lancer les migrations :
 
 ```bash

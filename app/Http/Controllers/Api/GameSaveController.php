@@ -57,8 +57,7 @@ class GameSaveController extends Controller {
 
     public function listPlayers()
     {
-        $players = GameSave::select('player_name')
-            ->distinct()
+        $players = GameSave::distinct()
             ->orderBy('player_name', 'asc')
             ->get();
 
